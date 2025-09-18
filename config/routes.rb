@@ -11,6 +11,11 @@ Rails.application.routes.draw do
   post "/md_users" => "test#create_md_user"
   get "/users" => "test#list_users"
   
+  # Shared collection test routes
+  post "/mm_shared_items" => "test#create_mm_shared_item"
+  post "/md_shared_items" => "test#create_md_shared_item"
+  get "/shared_items" => "test#list_shared_items"
+  
   # Defines the root path route ("/")
   # root "posts#index"
 end
