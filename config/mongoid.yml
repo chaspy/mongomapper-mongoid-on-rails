@@ -1,0 +1,32 @@
+development:
+  clients:
+    default:
+      database: mongomapper_mongoid_development
+      hosts:
+        - localhost:27017
+      options:
+        read:
+          mode: :primary
+        max_pool_size: 1
+
+test:
+  clients:
+    default:
+      database: mongomapper_mongoid_test
+      hosts:
+        - localhost:27017
+      options:
+        read:
+          mode: :primary
+        max_pool_size: 1
+
+production:
+  clients:
+    default:
+      database: mongomapper_mongoid_production
+      hosts:
+        - localhost:27017
+      options:
+        read:
+          mode: :primary
+        max_pool_size: 1
